@@ -2,7 +2,8 @@
 # Phase 2: Tạo ứng dụng web cơ bản
 ## Task 1 : Tạo VPC
 Thiết lập địa IPv4 CIDR cho VPC là 10.0.0.0/16 và tạo 2 zone chưa các public và private
-!![image](https://github.com/user-attachments/assets/9c850306-3585-4e46-88b7-704ad20963a0)
+
+![image](https://github.com/user-attachments/assets/9c850306-3585-4e46-88b7-704ad20963a0)
 
 ## Task 2: Tạo máy ảo sử dụng EC2
 * Chọn AMI
