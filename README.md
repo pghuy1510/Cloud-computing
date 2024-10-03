@@ -76,15 +76,15 @@ Sau khi tạo xong có thể truy cập CLI của Unbutu
 
 ![image](https://github.com/user-attachments/assets/875207ff-375f-401d-82f5-8643268ec43e)
 
-## Task 4: Provisioning Secrets Manager
+## Task 4: Provisioning Secrets Manager.
 
 ![image](https://github.com/user-attachments/assets/b97ba6d9-12b7-4ddd-abbe-55926e0c0230)
 
-## Task 5: Tạo thêm 1 EC2 instance cho web server mới
+## Task 5: Tạo thêm 1 EC2 instance cho web server mới.
 
 ![image](https://github.com/user-attachments/assets/8a9deb20-c0c9-4a06-9320-3cd7107021c3)
 
-## Task 6: Migrating the database
+## Task 6: Migrating the database.
 
 ![image](https://github.com/user-attachments/assets/870ece46-65ae-4998-b3e4-e572e525038f)
 
@@ -95,3 +95,65 @@ Sau khi đăng nhập thành công thì vào test
 Kết quả chạy web được triển khai trên EC2 instance mới và tách rời RDS
 
 ![Screenshot 2024-10-03 200336](https://github.com/user-attachments/assets/54d3d2b2-3203-4d39-95e7-4f20e077a0ea)
+
+# Phase 4: Implementing high availability and scalability.
+## Task 1: Application Load Balancer .
+* Load Balancer dùng để phân phối đều lưu lượng truy cập đến các máy chủ hoặc thành phần của hệ thống.
+
+![image](https://github.com/user-attachments/assets/b04076f0-5b04-4663-a263-f29086b90805)
+
+* Network Mapping
+
+![image](https://github.com/user-attachments/assets/c8ddb301-6d0d-42c6-8d38-cc5a031f946d)
+
+* Chọn Security Group ALB-SG đã thiết lập từ trước để quản lý và kiểm soát traffic đến và đi từ Load Balancer.
+
+![image](https://github.com/user-attachments/assets/37c9dfb6-d4ca-4c48-b59c-a7bf2723d4f7)
+
+* Thiết lập listeners and routing để kiểm tra các yêu cầu kết nối sử dụng các cổng và phương kết nối mạng ở đây là phương thức http port 80 và sử dụng target group đã tạo.
+
+![image](https://github.com/user-attachments/assets/18dded3e-77c2-478c-8679-6bff0092581d)
+
+## Task 2: Triển khai amazon EC2 Auto Scalling
+ASG giúp hệ thông vận hành tốt, giúp tự động quản lý và mở rộng instance EC2 được triển dựa vào EC2 ở phase 3.
+* Tạo Template
+
+![image](https://github.com/user-attachments/assets/58e21919-0ae9-4a3e-9fa8-7771e8ef514a)
+
+* Thiết Template đã tạo để auto scalling group tạo instance
+
+![image](https://github.com/user-attachments/assets/87ea64f1-8e92-43f6-badd-2fc34bd25945)
+
+* Lựa chọn VPC và thiết lập những AZ và subnet mà auto sẽ triển khai
+
+![image](https://github.com/user-attachments/assets/5dd19a0c-c000-4568-9a59-b0316c988888)
+
+* Lựa chọn load balance
+
+![image](https://github.com/user-attachments/assets/7fd6bb11-3107-4df2-b95d-78ca694ed5e6)
+
+* Gán ALB cho auto scalling group
+
+![image](https://github.com/user-attachments/assets/56955d5c-5e95-46d8-a82a-2393f0d439b2)
+
+* Chọn group size và scalling với min là instance và max là 6 instance tùy thuộc vào số lượng yêu cầu, công việc cần xử lý.
+
+![image](https://github.com/user-attachments/assets/f654b496-5046-42fb-87f5-5a08c87853c5)
+
+* Sau khi tạo xong
+
+![image](https://github.com/user-attachments/assets/5faae8ce-9c54-468f-916f-ca1b70e75c89)
+
+* Kết quả
+
+![image](https://github.com/user-attachments/assets/83c08114-cc4e-4bae-9489-c99138308db3)
+
+## Task 3: Truy cập vào web
+
+![image](https://github.com/user-attachments/assets/25fabd2e-df9c-4910-87d3-a88d8fb57480)
+
+## Task 4: Load test ứng dụng
+
+![image](https://github.com/user-attachments/assets/3b7da79b-9a05-4524-9d80-7447df7a4c9f)
+
+# Cảm ơn thầy cô đã xem ạ.
