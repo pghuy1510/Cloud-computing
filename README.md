@@ -50,7 +50,7 @@ Truy cập vào địa chỉ public iPv4 của instance, thử nghiệm thêm m�
 
 ![image](https://github.com/user-attachments/assets/8186532f-461e-4237-90c3-98ed4ff9819e)
 
-*Tạo subnet group gồm 2 subnet đã chọn
+*Tạo subnet group gồm 2 subnet đã chọn db 
 
 ![image](https://github.com/user-attachments/assets/0dfe5f58-8285-405b-ba25-e51cd9297159)
 
