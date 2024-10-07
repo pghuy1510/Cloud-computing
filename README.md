@@ -156,4 +156,4 @@ ASG giúp hệ thông vận hành tốt, giúp tự động quản lý và mở 
 
 ![image](https://github.com/user-attachments/assets/3b7da79b-9a05-4524-9d80-7447df7a4c9f)
 
-# Cảm ơn thầy cô đã xem ạ.
+
